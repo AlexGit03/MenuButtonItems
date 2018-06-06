@@ -8,12 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		4C8F508720C6DB3900A315F3 /* MenuButtonItems.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C8F508520C6DB3900A315F3 /* MenuButtonItems.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4C8F509A20C6DC0500A315F3 /* MenuButtonItemsXib.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4C8F508E20C6DC0500A315F3 /* MenuButtonItemsXib.xib */; };
+		4C8F509A20C6DC0500A315F3 /* MenuButtonItemsXib.xib in Headers */ = {isa = PBXBuildFile; fileRef = 4C8F508E20C6DC0500A315F3 /* MenuButtonItemsXib.xib */; settings = {ATTRIBUTES = (Public, ); }; };
 		4C8F509B20C6DC0500A315F3 /* DettaglioCollectionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C8F508F20C6DC0500A315F3 /* DettaglioCollectionViewModel.swift */; };
 		4C8F509C20C6DC0500A315F3 /* MenuButtonItemsXib.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C8F509020C6DC0500A315F3 /* MenuButtonItemsXib.swift */; };
 		4C8F509D20C6DC0500A315F3 /* ItemBtnCVCDataSources.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C8F509220C6DC0500A315F3 /* ItemBtnCVCDataSources.swift */; };
 		4C8F509E20C6DC0500A315F3 /* ItemBtnCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C8F509320C6DC0500A315F3 /* ItemBtnCVC.swift */; };
-		4C8F509F20C6DC0500A315F3 /* ItemBtnCVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4C8F509420C6DC0500A315F3 /* ItemBtnCVC.xib */; };
+		4C8F509F20C6DC0500A315F3 /* ItemBtnCVC.xib in Headers */ = {isa = PBXBuildFile; fileRef = 4C8F509420C6DC0500A315F3 /* ItemBtnCVC.xib */; settings = {ATTRIBUTES = (Public, ); }; };
 		4C8F50A020C6DC0500A315F3 /* ItemBtnModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C8F509520C6DC0500A315F3 /* ItemBtnModel.swift */; };
 		4C8F50A120C6DC0500A315F3 /* ItemBtnCVCDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C8F509620C6DC0500A315F3 /* ItemBtnCVCDelegate.swift */; };
 		4C8F50A220C6DC0500A315F3 /* NSObject+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C8F509820C6DC0500A315F3 /* NSObject+Extension.swift */; };
@@ -47,6 +47,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4C3332E720C808F50011BF68 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				4C8F508E20C6DC0500A315F3 /* MenuButtonItemsXib.xib */,
+				4C8F509420C6DC0500A315F3 /* ItemBtnCVC.xib */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		4C8F507820C6DB3900A315F3 = {
 			isa = PBXGroup;
 			children = (
@@ -66,6 +75,7 @@
 		4C8F508420C6DB3900A315F3 /* MenuButtonItems */ = {
 			isa = PBXGroup;
 			children = (
+				4C3332E720C808F50011BF68 /* Resources */,
 				4C8F509720C6DC0500A315F3 /* ExstensionForXib */,
 				4C8F508D20C6DC0500A315F3 /* MenuButtonsItems */,
 				4C8F508520C6DB3900A315F3 /* MenuButtonItems.h */,
@@ -77,7 +87,6 @@
 		4C8F508D20C6DC0500A315F3 /* MenuButtonsItems */ = {
 			isa = PBXGroup;
 			children = (
-				4C8F508E20C6DC0500A315F3 /* MenuButtonItemsXib.xib */,
 				4C8F508F20C6DC0500A315F3 /* DettaglioCollectionViewModel.swift */,
 				4C8F509020C6DC0500A315F3 /* MenuButtonItemsXib.swift */,
 				4C8F509120C6DC0500A315F3 /* CellBtnItem */,
@@ -90,7 +99,6 @@
 			children = (
 				4C8F509220C6DC0500A315F3 /* ItemBtnCVCDataSources.swift */,
 				4C8F509320C6DC0500A315F3 /* ItemBtnCVC.swift */,
-				4C8F509420C6DC0500A315F3 /* ItemBtnCVC.xib */,
 				4C8F509520C6DC0500A315F3 /* ItemBtnModel.swift */,
 				4C8F509620C6DC0500A315F3 /* ItemBtnCVCDelegate.swift */,
 			);
@@ -114,6 +122,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				4C8F508720C6DB3900A315F3 /* MenuButtonItems.h in Headers */,
+				4C8F509F20C6DC0500A315F3 /* ItemBtnCVC.xib in Headers */,
+				4C8F509A20C6DC0500A315F3 /* MenuButtonItemsXib.xib in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -175,8 +185,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4C8F509F20C6DC0500A315F3 /* ItemBtnCVC.xib in Resources */,
-				4C8F509A20C6DC0500A315F3 /* MenuButtonItemsXib.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
