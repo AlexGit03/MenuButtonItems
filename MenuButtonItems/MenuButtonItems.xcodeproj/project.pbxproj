@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4C78F00620C81866002AF7F3 /* NSObject+Extension.swift in Headers */ = {isa = PBXBuildFile; fileRef = 4C8F509820C6DC0500A315F3 /* NSObject+Extension.swift */; };
+		4C78F00720C81866002AF7F3 /* UIView+Extension.swift in Headers */ = {isa = PBXBuildFile; fileRef = 4C8F509920C6DC0500A315F3 /* UIView+Extension.swift */; };
+		4C78F00820C81866002AF7F3 /* DettaglioCollectionViewModel.swift in Headers */ = {isa = PBXBuildFile; fileRef = 4C8F508F20C6DC0500A315F3 /* DettaglioCollectionViewModel.swift */; };
+		4C78F00920C81866002AF7F3 /* MenuButtonItemsXib.swift in Headers */ = {isa = PBXBuildFile; fileRef = 4C8F509020C6DC0500A315F3 /* MenuButtonItemsXib.swift */; };
+		4C78F00A20C81866002AF7F3 /* ItemBtnCVCDataSources.swift in Headers */ = {isa = PBXBuildFile; fileRef = 4C8F509220C6DC0500A315F3 /* ItemBtnCVCDataSources.swift */; };
+		4C78F00B20C81866002AF7F3 /* ItemBtnCVC.swift in Headers */ = {isa = PBXBuildFile; fileRef = 4C8F509320C6DC0500A315F3 /* ItemBtnCVC.swift */; };
+		4C78F00C20C81866002AF7F3 /* ItemBtnModel.swift in Headers */ = {isa = PBXBuildFile; fileRef = 4C8F509520C6DC0500A315F3 /* ItemBtnModel.swift */; };
+		4C78F00D20C81866002AF7F3 /* ItemBtnCVCDelegate.swift in Headers */ = {isa = PBXBuildFile; fileRef = 4C8F509620C6DC0500A315F3 /* ItemBtnCVCDelegate.swift */; };
 		4C8F508720C6DB3900A315F3 /* MenuButtonItems.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C8F508520C6DB3900A315F3 /* MenuButtonItems.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4C8F509A20C6DC0500A315F3 /* MenuButtonItemsXib.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4C8F508E20C6DC0500A315F3 /* MenuButtonItemsXib.xib */; settings = {ATTRIBUTES = (Public, ); }; };
 		4C8F509B20C6DC0500A315F3 /* DettaglioCollectionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C8F508F20C6DC0500A315F3 /* DettaglioCollectionViewModel.swift */; };
@@ -122,6 +130,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				4C8F508720C6DB3900A315F3 /* MenuButtonItems.h in Headers */,
+				4C78F00620C81866002AF7F3 /* NSObject+Extension.swift in Headers */,
+				4C78F00720C81866002AF7F3 /* UIView+Extension.swift in Headers */,
+				4C78F00820C81866002AF7F3 /* DettaglioCollectionViewModel.swift in Headers */,
+				4C78F00920C81866002AF7F3 /* MenuButtonItemsXib.swift in Headers */,
+				4C78F00A20C81866002AF7F3 /* ItemBtnCVCDataSources.swift in Headers */,
+				4C78F00B20C81866002AF7F3 /* ItemBtnCVC.swift in Headers */,
+				4C78F00C20C81866002AF7F3 /* ItemBtnModel.swift in Headers */,
+				4C78F00D20C81866002AF7F3 /* ItemBtnCVCDelegate.swift in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -19,7 +19,7 @@ public class ItemBtnCVCDelegate: NSObject {
 }
 
 // MARK: - CLOUSUR
-extension ItemBtnCVCDelegate {
+public extension ItemBtnCVCDelegate {
     
     // didSelectItemAt
     public func didSelectItemAt(completionhandler: @escaping (IndexPath) -> Void, sectionTableView:Int) {
