@@ -31,7 +31,7 @@ public class MenuButtonItemsXib: UIView {
     @IBOutlet weak var textMenuLbl: UILabel!
     @IBOutlet weak var collectionView: UICollectionView!
     
-    private var funcDidSateButton:((_ isSelected:Bool)->Void)?
+    var funcDidSateButton:((_ isSelected:Bool)->Void)?
     
     //MARK: - View Lifecycle
     override init(frame: CGRect) {
@@ -131,7 +131,7 @@ public class MenuButtonItemsXib: UIView {
 
 // MARK: - xibSetup
 
-private extension MenuButtonItemsXib {
+extension MenuButtonItemsXib {
     
     func xibSetup() {
         view = loadNib()

@@ -5,7 +5,6 @@ import UIKit
 extension UIView {
     
     func takeScreenshot() -> UIImage! {
-        let rootViewController = UIApplication.shared.keyWindow?.rootViewController
         let frame = CGRect(x: 0, y: 0, width: self.frame.size.width, height: self.frame.size.height)
         UIGraphicsBeginImageContext(frame.size)
         self.layer.render(in: UIGraphicsGetCurrentContext()!)
