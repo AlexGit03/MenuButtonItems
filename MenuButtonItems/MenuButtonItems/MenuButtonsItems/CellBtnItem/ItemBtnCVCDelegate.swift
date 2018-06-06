@@ -8,28 +8,22 @@
 
 import UIKit
 
-open class ItemBtnCVCDelegate: NSObject {
+public class ItemBtnCVCDelegate: NSObject, UICollectionViewDelegate {
     
-    open var funcDidSelectRowAt:((IndexPath)->Void)?
-    open var sectionTableView:Int?
+    var funcDidSelectRowAt:((IndexPath)->Void)?
+    var sectionTableView:Int?
     
     override public init() {
         super.init()
     }
-}
-
-// MARK: - CLOUSUR
-public extension ItemBtnCVCDelegate {
     
     // didSelectItemAt
     public func didSelectItemAt(completionhandler: @escaping (IndexPath) -> Void, sectionTableView:Int) {
         funcDidSelectRowAt = completionhandler
         self.sectionTableView = sectionTableView
     }
-}
-
-// MARK: - UICollectionViewDelegate
-extension ItemBtnCVCDelegate: UICollectionViewDelegate {
+    
+    // MARK: - UICollectionViewDelegate
     
     // Select cell
     public func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
@@ -40,21 +34,21 @@ extension ItemBtnCVCDelegate: UICollectionViewDelegate {
     
     //Use for size
     public func collectionView(collectionView: UICollectionView,
-                        layout collectionViewLayout: UICollectionViewLayout,
-                        sizeForItemAtIndexPath indexPath: NSIndexPath) -> CGSize {
+                               layout collectionViewLayout: UICollectionViewLayout,
+                               sizeForItemAtIndexPath indexPath: NSIndexPath) -> CGSize {
         return CGSize.init(width: collectionView.frame.size.height, height: collectionView.frame.size.height)
     }
     
     //Use for interspacing
     public func collectionView(collectionView: UICollectionView,
-                        layout collectionViewLayout: UICollectionViewLayout,
-                        minimumInteritemSpacingForSectionAtIndex section: Int) -> CGFloat {
+                               layout collectionViewLayout: UICollectionViewLayout,
+                               minimumInteritemSpacingForSectionAtIndex section: Int) -> CGFloat {
         return 1.0
     }
     
     public func collectionView(collectionView: UICollectionView, layout
         collectionViewLayout: UICollectionViewLayout,
-                        minimumLineSpacingForSectionAtIndex section: Int) -> CGFloat {
+                               minimumLineSpacingForSectionAtIndex section: Int) -> CGFloat {
         return 1.0
     }
 }
