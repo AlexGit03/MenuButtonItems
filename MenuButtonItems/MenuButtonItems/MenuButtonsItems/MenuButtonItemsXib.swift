@@ -11,17 +11,30 @@ import UIKit
 public class MenuButtonItemsXib: UIView {
     
     public struct ModelItem {
-        var imageName:String
-        var textBtn:String?
-        var castomizedView:CastomizedView?
+        public var imageName:String
+        public var textBtn:String?
+        public var castomizedView:CastomizedView?
+        
+        public init(imageName:String, textBtn:String?, castomizedView:CastomizedView) {
+            self.imageName = imageName
+            self.textBtn = textBtn
+            self.castomizedView = castomizedView
+        }
     }
     
     public struct CastomizedView {
-        var colorBackgroundView:UIColor?
-        var isCircleView:Bool = false
-        var cornerRadiusView:CGFloat?
+        public var colorBackgroundView:UIColor?
+        public var isCircleView:Bool = false
+        public var cornerRadiusView:CGFloat?
+        
+        public init() {}
+        
+        public init(colorBackgroundView: UIColor?, isCircleView: Bool, cornerRadiusView: CGFloat?) {
+            self.colorBackgroundView = colorBackgroundView
+            self.isCircleView = isCircleView
+            self.cornerRadiusView = cornerRadiusView
+        }
     }
-    
     
     //MARK: - Properties
     var view: UIView!
