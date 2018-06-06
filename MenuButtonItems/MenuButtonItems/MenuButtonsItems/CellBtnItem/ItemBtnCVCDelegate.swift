@@ -18,9 +18,9 @@ public class ItemBtnCVCDelegate: NSObject, UICollectionViewDelegate {
     }
     
     // didSelectItemAt
-    public func didSelectItemAt(completionhandler: @escaping (IndexPath) -> Void, sectionTableView:Int) {
-        funcDidSelectRowAt = completionhandler
-        self.sectionTableView = sectionTableView
+    public func didSelectItemAt(completionhandler: @escaping (IndexPath) -> Void, sectionTableViewA:Int) {
+        self.funcDidSelectRowAt = completionhandler
+        self.sectionTableView = sectionTableViewA
     }
     
     // MARK: - UICollectionViewDelegate
@@ -28,8 +28,8 @@ public class ItemBtnCVCDelegate: NSObject, UICollectionViewDelegate {
     // Select cell
     public func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         var indexPathCell = indexPath
-        if let sectionTableView = sectionTableView { indexPathCell.section = sectionTableView }
-        funcDidSelectRowAt?(indexPathCell)
+        if let sectionTableView = self.sectionTableView { indexPathCell.section = sectionTableView }
+        self.funcDidSelectRowAt?(indexPathCell)
     }
     
     //Use for size

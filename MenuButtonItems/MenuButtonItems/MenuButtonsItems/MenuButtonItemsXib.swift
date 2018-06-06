@@ -117,7 +117,7 @@ public class MenuButtonItemsXib: UIView {
         dettaglio.delegate = delegateCV
         delegateCV.didSelectItemAt(completionhandler: { (indexPath) in
             itemSelected(indexPath.row)
-        }, sectionTableView: 0)
+        }, sectionTableViewA: 0)
 
         var itemsModel = [ItemBtnModel]()
         
