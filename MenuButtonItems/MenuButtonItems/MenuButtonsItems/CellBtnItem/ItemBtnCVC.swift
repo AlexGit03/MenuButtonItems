@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ItemBtnCVC: UICollectionViewCell {
+public class ItemBtnCVC: UICollectionViewCell {
     
     static let identifieldCell = "ItemBtnCVC"
     
@@ -22,7 +22,7 @@ class ItemBtnCVC: UICollectionViewCell {
         }
     }
     
-    override func awakeFromNib() {
+    override public func awakeFromNib() {
         super.awakeFromNib()
     }
     

@@ -13,7 +13,7 @@ public class ItemBtnCVCDelegate: NSObject {
     public var funcDidSelectRowAt:((IndexPath)->Void)?
     public var sectionTableView:Int?
     
-    override init() {
+    override public init() {
         super.init()
     }
 }

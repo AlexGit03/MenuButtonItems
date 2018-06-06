@@ -153,7 +153,8 @@ extension MenuButtonItemsXib {
     }
     
     func collectionViewSetup() {
-        collectionView.register(UINib(nibName: ItemBtnCVC.identifieldCell, bundle: nil), forCellWithReuseIdentifier: ItemBtnCVC.identifieldCell)
+        let bundle = Bundle(for: type(of: self) as AnyClass)
+        collectionView.register(UINib(nibName: ItemBtnCVC.identifieldCell, bundle: bundle), forCellWithReuseIdentifier: ItemBtnCVC.identifieldCell)
     }
 }
 
