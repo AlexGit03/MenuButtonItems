@@ -8,10 +8,10 @@
 
 import UIKit
 
-public class ItemBtnCVCDelegate: NSObject {
+open class ItemBtnCVCDelegate: NSObject {
     
-    public var funcDidSelectRowAt:((IndexPath)->Void)?
-    public var sectionTableView:Int?
+    open var funcDidSelectRowAt:((IndexPath)->Void)?
+    open var sectionTableView:Int?
     
     override public init() {
         super.init()
